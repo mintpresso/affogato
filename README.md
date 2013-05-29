@@ -39,17 +39,17 @@ If you're using Play Framework 2, edit `project/Build.scala`.
 We can export your API key to `conf/application.conf`. This configuration makes you feel happy when you deploy on several servers or use multiple keys.
 ```
 # one key and id pair
-mintpresso.api=YOUR_API_KEY_HERE
+mintpresso.api="YOUR_API_KEY_HERE"
 mintpresso.id=1
 
 # many pairs
 mintpresso {
   internal {
-    api=API_KEY_FOR_SECURED_OPERATION
+    api="API_KEY_FOR_SECURED_OPERATION"
     id=1000
   }
   external {
-    api=API_KEY_FOR_READONLY
+    api="API_KEY_FOR_READONLY"
     id=1000
   }
 }
